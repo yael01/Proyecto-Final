@@ -17,3 +17,14 @@ int main()
     
     return 0;
 }
+
+
+TEST
+
+Ingresa un npumero 5
+
+1
+22
+333
+4444
+55555
