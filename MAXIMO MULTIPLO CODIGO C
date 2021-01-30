@@ -13,3 +13,27 @@
      }   printf ("EL MAXIMO MULTPLO ES: %d",r);
      return 0;
 }
+
+
+TEST  
+int divisor = 2;
+	int limite = 5;
+	generarMaximoMultiplo (divisor, límite), 4
+
+
+
+
+
+if ((lim% divs) == 0) n = lim; else {n = lim- (lim% divs);
+    } if (n == 4) {printf ("Ok \ n"); printf ("Divisor: \% d \ n", divs); printf ("Límite: \% d \ n \ n", lim);
+    } else {printf ("Error \ n"); return 0;
+} 
+
+
+int divisor = 5;
+int limite = 30;
+generarMaximoMultiplo ($ divisor, $ limite), 30
+
+si ((lim1% divs1) == 0) x = lim1; else {x = lim1- (lim1% divs1);
+    } if (x == 30) {printf ("Ok \ n"); printf ("Divisor: \% d \ n", divs1); printf ("Límite: \% d", lim1);
+    } else {printf ("Error \ n"); return 0;
