@@ -1,0 +1,15 @@
+#include <stdio.h>
+ int main() {
+    int r;
+    int divsor;
+    int limite;
+      printf("dame un divisor\n");
+    scanf ("%d",& divsor);
+    printf ("dame un limite \n");
+    scanf ("%d",& limite);
+     if ((limite % divsor) == 0)
+              r = limite;
+     else{      r=limite-(limite % divsor);
+     }   printf ("EL MAXIMO MULTPLO ES: %d",r);
+     return 0;
+}
