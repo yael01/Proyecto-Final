@@ -20,3 +20,12 @@ long calculoFactorial(int n) {
 int main() {
     printf("factorial de 5 es %d", calculoFactorial(5));
 }
+
+
+TEST
+factorial de 5 
+5*4 20
+20*3 60
+60*2 120
+120*1 120
+120
