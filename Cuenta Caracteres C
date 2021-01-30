@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+ char * pequenaCad;
+ int a2[1000][2];
+ enumerar (pequenaCad, a2);
+}
+
+void enumerar(const char * chain, int array[][2])
+{
+	int i, nume=0, j=0, cj, a=0, test=0;
+  int k=0;
+  char* s;
+  printf("Escribe la palabra que quieras contar \n");
+  chain = malloc (256);
+  scanf("%255s", chain );
+  s = strdup(chain);
+  cj=strlen(chain);
+  for  (i=0; i<cj; i++)
+  {
+  	while (k<cj)
+  	{
+  		  if(i!=k && k<cj)
+  		  {
+  		   if (s[i]==s[k])
+  		    {
+  			  nume=nume+1;
+  			  s[k]=0;
+  		    }
+  	      }
+  		  k++;
+  	}
+  	    if (s[i]!=0)
+  	    {
+  	      if (nume >= 1)
+  	      {
+  		   array[j][1]= nume + 1;
+  		   array[j][0]= s[i];
+  		   test=array[j][0];
+  	      }
+  	      else
+  	      {
+  	     	array[j][1]= 1;
+  	    	array[j][0]= s[i];
+  	    	test=array[j][0];
+   	      }
+   	      j++;
+   	      a=a+1;
+       	    }
+  		nume=0;
+  		k=0;
+  }
+  for (i=0 ; i<a ; i++)
+  {
+   for (k=0 ; k<2 ; k++)
+   {
+   printf("%ld,",array[i][k]);
+   }
+   printf("\n");
+  }
+}
+
+
+
+TEST
+
+amor                    97,1,                      
+                            107,1,
+                            111,1,
+                            114,1,
