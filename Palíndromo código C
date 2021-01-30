@@ -1,0 +1,58 @@
+char cadena[] = "";
+verificarPalindromo($cadena), 0
+
+char cadena[] = "anita lava la tina";
+verificarPalindromo($cadena), 1
+
+char cadena[] = "A Mafalda dad la fama";
+verificarPalindromo($cadena), 1
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+
+int main()
+{
+   char* cadena1 = (char*)malloc(100);
+   char* cadena2 = (char*)malloc(100);
+   printf("Escribe la cadena\n");
+   gets(cadena1);
+   int long1, long2, n, i, j;
+   n=1;
+   j=0;
+   char c = ' ';
+   long1=strlen(cadena1);
+
+   for(i=0;i<=long1;i++)
+   {
+       if (isupper(cadena1[i]))
+        cadena1[i] = tolower(cadena1[i]);
+       if(cadena1[i] != c)
+        {
+        cadena2[j] = cadena1[i];
+        j++;
+       }
+   }
+
+    printf("%s\n", cadena2);
+    long2 = strlen(cadena2);
+    printf("%d\n", long2);
+    for(i=0;i<=long2/2;i++)
+    {
+        if(cadena2[i] != cadena2[long2-i-1])
+            n = 0;
+    }
+
+     if(n)
+        printf("Es palindromo\n");
+     else     printf("No es palindromo\n");
+
+        free(cadena1);
+        free(cadena2);
+
+
+
+
+}
