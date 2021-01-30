@@ -1,0 +1,30 @@
+#include <stdio.h>
+int hallarMenorElemento(int arreglo [], int t)
+{
+int men, x;
+men = arreglo[0];
+
+for (x=0; x<t; x++)
+{
+if (arreglo[x]<men)
+{
+men=arreglo[x];
+}
+}
+printf("Este es el menor %d\n", men);
+return 0;
+}
+
+//Programa test
+//#include "../menorElemento.c"
+//int main()
+//{
+
+//int arreglo2[] = {-3,0,2,44,6,2};
+//hallarMenorElemento(arreglo2,6);
+
+//int arreglo [] = {7,6,5,4,3,2}
+//hallarMenorElemento(arreglo, 6);
+
+//return 0;
+//}
