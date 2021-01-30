@@ -1,0 +1,22 @@
+#include <string.h> 
+#include <stdio.h> 
+
+int main(void) 
+    { 
+    char cdn02[50], cdn01[100];  
+        printf("\t\n Ingrese una cadena"); 
+            scanf("%s", cdn01); 
+        printf("\t\n Ingrese otra cadena"); 
+            scanf("%s", cdn02); 
+  
+    if (strstr(cdn01, cdn02) != NULL)  
+    { 
+    printf("\t\n Es posible tener %s adentro de %s\n", cdn02, cdn01);  
+     
+    } 
+        else 
+    { 
+    printf("\t\n No es posible tener %s adentro de %s\n", cdn02, cdn01);  
+     
+    } 
+} 
