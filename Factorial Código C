@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+long calculoFactorial(int n) {
+    int a = 1;
+    if(n==0)
+    {
+        return a;
+    }
+    else
+    {
+        while(n>0)
+        {
+            a= a*n;
+            n= n-1;
+        }
+        return a;
+    }
+}
+
+int main() {
+    printf("factorial de 5 es %d", calculoFactorial(5));
+}
